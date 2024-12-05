@@ -1,5 +1,6 @@
 import { Request, Response } from "express";
 import { signUpSchema, signInSchema } from "../types";
+import { prisma } from "@repo/database/client";
 
 export const signUp = async (req: Request, res: Response) => {
   const { email, password, role } = signUpSchema.parse(req.body);
