@@ -40,7 +40,7 @@ export default function HeroSection() {
           >
             <div className="relative w-full aspect-square max-w-md mx-auto">
               <video
-                src="https://ouch-cdn2.icons8.com/tNpkevHCK4281wiQGQrGuP0T-cXgcHx7NGx3X2XCAkA/skp:webm/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy92aWRlb3Mv/MjkvMzNiN2M2NmMt/ZmIzYS00ZTliLTg5/MTktNmRiYzA2YzRi/OWZjLndlYm0.webm"
+                src="https://ouch-cdn2.icons8.com/f4eYeEkh5alc4fbZ38tWX1GInUWVKlmY-CWBymCTiEQ/skp:webm/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy92aWRlb3Mv/OTEvYjFmOGYzZmQt/ZDhkNi00ZTYwLWFk/YjYtMGQxOGJjYjY1/YzhlLndlYm0.webm"
                 autoPlay
                 loop
                 muted
