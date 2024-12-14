@@ -28,7 +28,7 @@ export default function HeroSection() {
                 </Button>
               </Link>
               <Button size="lg" variant="outline">
-                Watch Trailer
+                Watch Trailer!
               </Button>
             </div>
           </motion.div>
