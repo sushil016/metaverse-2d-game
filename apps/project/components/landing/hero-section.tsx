@@ -6,7 +6,33 @@ import Link from "next/link";
 
 export default function HeroSection() {
   return (
-    <section className="relative pt-32 pb-16 md:pt-40 md:pb-24">
+    <section className="relative pt-32 pb-16 md:pt-40 md:pb-24 overflow-hidden">
+      {/* Sophisticated Grid Background */}
+      <div className="absolute inset-0 -z-10">
+        <div 
+          className="absolute inset-0" 
+          style={{
+            backgroundImage: `
+              linear-gradient(to right, rgb(255 255 255 / 0.05) 1px, transparent 1px),
+              linear-gradient(to bottom, rgb(255 255 255 / 0.05) 1px, transparent 1px),
+              linear-gradient(to right, rgb(255 255 255 / 0.1) 2px, transparent 2px),
+              linear-gradient(to bottom, rgb(255 255 255 / 0.1) 2px, transparent 2px)
+            `,
+            backgroundSize: '40px 40px, 40px 40px, 200px 200px, 200px 200px'
+          }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/90 to-transparent" />
+      </div>
+
+      {/* Gradient Blurs */}
+      <div className="absolute inset-0 -z-10 overflow-hidden">
+        {/* Left blur */}
+        <div className="absolute -top-40 -left-20 h-[40rem] w-[40rem] rounded-full bg-blue-500/20 blur-[128px]" />
+        {/* Center deep blue blur */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[50rem] w-[50rem] rounded-full bg-blue-900/30 blur-[160px]" />
+        {/* Right blur */}
+        <div className="absolute -top-40 -right-20 h-[40rem] w-[40rem] rounded-full bg-violet-500/20 blur-[128px]" />
+      </div>
       <div className="container mx-auto px-24">
         <div className="flex flex-col md:flex-row items-center justify-between gap-12">
           <motion.div 
@@ -28,7 +54,7 @@ export default function HeroSection() {
                 </Button>
               </Link>
               <Button size="lg" variant="outline">
-                Watch Trailer!
+                Watch Trailer
               </Button>
             </div>
           </motion.div>
