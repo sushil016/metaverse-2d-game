@@ -77,12 +77,15 @@ export default function CommunitySection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="text-center"
+          className="text-center flex justify-center"
         >
           <Link href="/auth">
-            <Button size="lg" className="bg-gradient-to-r from-blue-500 to-violet-500 hover:from-blue-600 hover:to-violet-600">
-              Join Our Community
-            </Button>
+            <div className="relative group w-[230px] h-[60px] bg-blur-500 border border-border/50 rounded-full flex items-center justify-center backdrop-blur-md">
+              <Button size="lg" className="rounded-full bg-gradient-to-r from-blue-500 to-violet-500 hover:from-blue-600 hover:to-violet-600 duration-200">
+                Join Our Community
+              </Button>
+              <div className="absolute bottom-0 left-0 right-0 h-1 rounded-full bg-gradient-to-r from-blue-500 to-violet-500 blur-md ml-6 w-3/4 flex justify-center"></div>
+            </div>
           </Link>
         </motion.div>
       </div>

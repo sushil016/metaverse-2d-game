@@ -42,18 +42,22 @@ export default function HeroSection() {
             className="flex-1 text-center md:text-left"
           >
             <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-violet-400 bg-clip-text text-transparent">
-              Connect. Explore. Interact.
+            Create. Connect. Chill in Your Virtual Home!
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl">
-              Step into a vibrant 2D social universe where creativity meets community. Build, explore, and connect with players from around the world in real-time.
+            Animated representation of personalized house spaces and interactions
+            in real-time...!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-              <Link href="/auth">
-                <Button size="lg" className="bg-gradient-to-r from-blue-500 to-violet-500 hover:from-blue-600 hover:to-violet-600">
-                  Start Your Journey
-                </Button>
-              </Link>
-              <Button size="lg" variant="outline">
+              <div className="relative group">
+                <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-600 to-violet-600 rounded-full blur opacity-30 group-hover:opacity-100 transition duration-200"></div>
+                <Link href="/auth">
+                  <Button size="lg" className="relative bg-gradient-to-r from-blue-500 to-violet-500 hover:from-blue-600 hover:to-violet-600 rounded-full w-full">
+                  Explore Spaces
+                  </Button>
+                </Link>
+              </div>
+              <Button size="lg" variant="outline" className="rounded-full">
                 Watch Trailer
               </Button>
             </div>

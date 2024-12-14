@@ -1,7 +1,12 @@
 import HeroSection from '@/components/landing/hero-section';
-import FeaturesSection from '@/components/landing/features-section';
+import { FeaturesSection } from '@/components/landing/features-section';
 import CommunitySection from '@/components/landing/community-section';
 import Navbar from '@/components/landing/navbar';
+import { HowItWorks } from '@/components/landing/how-it-works';
+import { Testimonials } from '@/components/landing/testimonials';
+import { ContactForm } from '@/components/landing/contsct-form';
+import { PricingSection } from '@/components/landing/pricing-section';
+import { Footer } from '@/components/landing/footer';
 
 export default function Home() {
   return (
@@ -10,7 +15,12 @@ export default function Home() {
       <Navbar />
       <HeroSection />
       <FeaturesSection />
+      <HowItWorks />
+      <Testimonials />
+      <PricingSection />
+      <ContactForm />
       <CommunitySection />
+      <Footer />
     </main>
   );
 }
