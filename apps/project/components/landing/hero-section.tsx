@@ -24,13 +24,13 @@ export default function HeroSection() {
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/90 to-transparent" />
       </div>
 
-      {/* Gradient Blurs */}
+      
       <div className="absolute inset-0 -z-10 overflow-hidden">
-        {/* Left blur */}
+      
         <div className="absolute -top-40 -left-20 h-[40rem] w-[40rem] rounded-full bg-blue-500/20 blur-[128px]" />
-        {/* Center deep blue blur */}
+        
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[50rem] w-[50rem] rounded-full bg-blue-900/30 blur-[160px]" />
-        {/* Right blur */}
+       
         <div className="absolute -top-40 -right-20 h-[40rem] w-[40rem] rounded-full bg-violet-500/20 blur-[128px]" />
       </div>
       <div className="container mx-auto px-24">
