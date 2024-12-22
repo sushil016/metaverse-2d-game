@@ -24,7 +24,7 @@ const testimonials = [
 export default function CommunitySection() {
   return (
     <section className="py-16 md:py-24">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 max-w-7xl items-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

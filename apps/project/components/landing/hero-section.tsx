@@ -8,7 +8,7 @@ export default function HeroSection() {
   return (
     <section className="relative pt-32 pb-16 md:pt-40 md:pb-24 overflow-hidden">
       {/* Sophisticated Grid Background */}
-      <div className="absolute inset-0 -z-10">
+      <div className="absolute inset-0 -z-10 max-w-7xl mx-auto items-center">
         <div 
           className="absolute inset-0" 
           style={{

@@ -4,7 +4,7 @@ import { Github, Twitter, Linkedin } from 'lucide-react'
 export function Footer() {
   return (
     <footer className="bg-background border-t border-border">
-      <div className="container px-4 md:px-6 py-16">
+      <div className="container px-4 md:px-6 py-16 max-w-7xl mx-auto items-center">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           <div>
             <h3 className="text-lg font-semibold mb-4">Product</h3>
